@@ -1,0 +1,121 @@
+//main:../style.less
+
+.contact{
+    margin-top: 107px;
+    margin-bottom: 80px;
+}
+
+.contact-header{
+    margin-bottom: 75px;
+
+    &__tittle{
+        margin-bottom: 30px;
+    }
+
+    &__liner{
+        margin-bottom: 30px;
+        background-color: @orange;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__text{
+        font-family: 'Open Sans';
+        font-size: 14px;
+        font-weight: 400;
+        color: #86878b;
+
+        text-align: center;
+    }
+}
+
+
+.contact-form{
+    display: grid;
+    margin-bottom: 42px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 70px;
+    grid-template-areas: 'A B'
+                         'C B'
+                         'D B';
+    @media @mobile-sm{
+        grid-template-columns:1fr;
+        grid-template-areas: 'A'
+                             'C'
+                             'D'
+                             'B';
+    }
+
+    &__textarea-msg{
+        display: block;
+        grid-area: B;
+        resize: none;
+      
+        
+     }
+
+
+    &__input-name{
+        display: block;
+        grid-area: A;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+     }
+
+
+    &__input-email{
+        display: block;
+        grid-area: C;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+      
+        
+    }
+
+
+    &__input-subject{
+        display: block;
+        grid-area: D;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+      
+        
+    }
+}
+
+.inp-f{
+    border: none;
+    border-bottom: 1.5px solid #bdbdbd;
+    outline: none;
+
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    color: #bdbdbd;
+    transition:border-bottom 0.2s linear ;
+
+    &:hover,&:focus{
+        border-bottom: 2px solid gray;
+    }
+}
+
+.contact__button{
+    background-color: @orange;
+    border-radius: 3px;
+    color: white;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+    transition: box-shadow 0.2s linear;
+    transition: color 0.2s linear;
+
+    &:hover{
+        box-shadow: 5px 5px 10px @orange;
+        color: black;
+    }
+}

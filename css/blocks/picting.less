@@ -1,0 +1,135 @@
+//main:../style.less
+
+.picting{
+    background-color: #f4f6f4;
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+
+.picting__tittle{
+    margin-bottom: 30px;
+
+}
+.picting__liner{
+    background-color: @orange;
+    margin-left: auto;
+    margin-bottom: 30px;
+    margin-right: auto;
+}
+.picting__text{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    color: #86878b;
+    text-align: center;
+
+    margin-bottom: 80px;
+}
+
+.picting__card-folder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 40px;
+    justify-content: center;
+    @media @tablet{
+        grid-template-columns: 70%;
+        column-gap: 0;
+        row-gap: 50px;
+    }
+    @media @mobile{
+        grid-template-columns: 1fr;
+    }
+}
+
+.picting__card{
+    & button{
+        margin: 0;
+        padding: 0;
+    }
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding-left: 0;
+    padding-right: 0;
+    transition: box-shadow 0.2s linear;
+    &:hover{
+        box-shadow: 6px 6px 20px gray;
+    }
+
+    &-tittle{
+        font-family: 'Open Sans';
+        font-size: 20px;
+        font-weight: 700;
+        padding: 21px 0;
+        text-align: center;
+        color: #ffffff;
+        background-color: black;
+        border-bottom: 2px solid white;
+    }
+
+    &-coast{
+        text-align: center;
+        padding-top: 41px;
+        padding-bottom: 10px;
+        background-color: black;
+        font-family: 'Raleway';
+        font-size: 35px;
+        font-weight: 700;
+        color: #ffffff;
+        & span{
+            font-size: 94px;
+        }
+    }
+    &-subtittle{
+        font-family: 'Open Sans';
+        font-size: 14px;
+        font-weight: 600;
+        font-style: italic;
+        color: gray;
+        text-align: center;
+        background-color: black;
+        padding-top: 19px;
+        padding-bottom: 19px;
+
+        border-bottom: 5px solid @orange;
+    }
+    &-popular{
+        font-family: 'Open Sans';
+        font-size: 14px;
+        font-weight: 700;
+        color: #ffffff;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        background-color: @orange;
+        text-align: center;
+    }
+}
+
+.card-diskription{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #86878b;
+    text-align: center;
+
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: white;
+    }
+
+    .not-bord{
+        border-bottom: none;
+    }
+
+    .pad{
+        margin-top: 50px;
+        @media @tablet{
+            padding-top: 0;
+        }
+    }
+

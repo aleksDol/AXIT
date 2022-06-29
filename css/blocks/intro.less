@@ -1,0 +1,159 @@
+//main:../style.less
+
+.intro{
+    background: url("../images/bacground-intro.jpeg") top no-repeat;
+    background-size: cover;
+    
+ 
+}
+.intro__inner{
+    padding-top: 120px;
+    padding-bottom: 139px;
+
+    display: flex;
+    justify-content: space-between;
+    @media @mobile{
+        flex-wrap: wrap;
+    }
+
+}
+.intro__content{
+    width: 60%;
+    margin-right: 70px;
+    @media @mobile{
+        width: 100%;
+        order: 1;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+}
+.intro__logo{
+    margin-bottom: 31px;
+    @media @mobile{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.tittle--white-left{
+    text-align: left;
+    font-family: 'Raleway';
+    font-size: 36px;
+    font-weight: 400;
+    color: #ffffff;
+
+    margin-bottom: 36px;
+
+    @media @mobile{
+        text-align: center;
+    }
+}
+
+.liner--intro-white{
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    @media @mobile{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.intro__text{
+    opacity: 0.8;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    max-width: 450px;
+    margin-bottom: 44px;
+    @media @mobile{
+        text-align: center;
+        max-width: 100%;
+    }
+}
+.intro--btn{
+    border: 3px solid @lite-gray;
+    max-width: 140px;
+    color: @lite-gray;
+    transition: background-color 0.2s linear;
+    transition: color 0.2s linear;
+    &:hover{
+        background-color: @lite-gray;
+        color: black;
+    }
+    @media @mobile{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+.intro__form-side{
+    width: 40%;
+    @media @mobile{
+        width: 100%;
+        order: 2;
+      
+    }
+}
+.form{
+    max-width: 400px;
+    background-color: white;
+    margin-top: 30px;
+    @media @mobile{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+.form__tittle{
+    background-color: @lite-gray;
+    padding: 17px 55px;
+
+
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+    & span{
+        color: #ff8b38;
+
+    }
+    }
+.form__input{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: block; 
+    background: none;
+    border: none;  
+    border-bottom: 2px solid fade(gray, 40%);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    &:hover,:focus{
+        border-bottom: 2px solid black;
+    }
+}
+.form__button{
+    margin-top: 49px;
+    background: none;
+    border: none;
+    width: 100%;
+    padding: 21px 100px;
+    background-color: #ff8b38;
+    color: white;
+
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    transition:background-color 0.2s linear ;
+
+    &:hover{
+        background-color: lighten(#ff8b38, 10%);
+    }
+
+    @media @tablet{
+        padding: 21px 0;
+    }
+}

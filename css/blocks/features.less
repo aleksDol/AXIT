@@ -1,0 +1,116 @@
+//main:../style.less
+
+
+.features{
+    padding-top: 147px;
+    padding-bottom: 114px;
+    background-color: #f4f6f4;
+    @media @mobile-sm{
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+}
+.features__inner{
+    display: flex;
+    @media @mobile-sm{
+    flex-wrap: wrap;
+    }
+}
+
+.features__tabs{
+    margin-right: 99px;
+    @media @mobile-sm{
+        margin-right: 0;
+        width: 100%;
+        display: flex;
+        margin-bottom: 50px;
+    }
+}
+
+.features__tabs-btn{
+    width: 115px;
+    background: none;
+    border:  none;
+    cursor: pointer;
+
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+
+    text-transform: uppercase;
+    padding: 50px 35px;
+
+    background-color: #333333;
+    transition: background-color 0.2s linear ;
+    &:hover{
+        background-color: @orange;
+    }
+    @media @mobile-sm{
+        padding: 35px 25px;
+        &:not(:last-child){
+            margin-right: 20px;
+        }       
+    }
+}
+
+.tab-active{
+    background-color: @orange;
+}
+
+
+.features__content{
+    margin-top: 8px;
+    margin-right: 100px;
+    @media @tablet{
+        margin-right: 0;
+    }
+}
+
+.features__content-tittle{
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+
+    margin-bottom: 52px;
+    @media @mobile-sm{
+        margin-bottom: 10px;
+        text-align: center;      
+    }
+}
+
+.features__content-text{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #86878b;
+    margin-bottom: 51px;
+    @media @mobile-sm{
+        margin-bottom: 30px;
+        text-align: center;      
+    }
+}
+.features__content-btn{
+    color: #ffffff;
+    background-color: @orange;
+    border-radius: 3px;
+    transition: box-shadow 0.2s linear;
+    transition: color 0.2s linear;
+    &:hover{
+        box-shadow: 5px 5px 10px @orange;
+        color: black;
+    }
+    @media @mobile-sm{
+        display: block;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;       
+    }
+}
+.features__photo{
+    @media @tablet{
+        display: none;
+    }
+}

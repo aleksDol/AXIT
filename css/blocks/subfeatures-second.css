@@ -1,0 +1,11 @@
+.subfeatures-second {
+  background-color: #f4f6f4;
+  padding-top: 75px;
+  padding-bottom: 120px;
+}
+.subfeatures-second__inner {
+  display: none;
+}
+.subfeatures-second__content {
+  width: 50%;
+}

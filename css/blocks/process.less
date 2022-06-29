@@ -1,0 +1,79 @@
+//main:../style.less
+
+.process{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.process__header{
+    margin-bottom: 70px;
+}
+
+.process__tittle{
+    margin-bottom: 30px;
+}
+.process__liner{
+    background-color: @orange;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.process__text{
+    text-align: center;
+
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    color: #86878b;
+}
+
+.process__card-folder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 32px;
+    grid-template-rows: auto;
+    @media @mobile-sm{
+        grid-template-columns: 1fr;
+        column-gap: 0px;
+        row-gap: 50px;
+    }
+}
+.process__card{
+    @media @mobile{
+        border-bottom: 3px solid gray;
+        padding-bottom: 20px;
+    }
+}
+.process__card-photo{
+    width: 70px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 30px;
+
+    @media @mobile-sm{
+     width: 100px;
+     height: 100px;
+    }
+}
+
+
+.process__card-tittle{
+    text-align: center;
+    margin-bottom: 32px;
+
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.process__card-text{
+    text-align: center;
+
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #86878b;
+}

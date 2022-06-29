@@ -1,0 +1,82 @@
+//main:../style.less
+
+.rewiews{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.rewiews-header{
+    margin-bottom: 55px;
+
+    &__tittle{
+        margin-bottom: 30px;
+    }
+    &__liner{
+        background-color: @orange;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__text{
+        text-align: center;
+
+        font-family: 'Open Sans';
+        font-size: 14px;
+        font-weight: 400;
+        color: #86878b;
+    }
+}
+
+.rewiews-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 100px;
+    @media @tablet{
+        column-gap: 30px;
+    }
+    @media @mobile-sm{
+        column-gap: 0;
+        row-gap: 70px;
+        grid-template-columns: 1fr;
+    }
+    &__massenge{
+        background-color: #f4f6f4;
+        padding: 10px;
+        margin-bottom: 10px;
+
+        font-family: 'Open Sans';
+        font-size: 14px;
+        font-weight: 400;
+        font-style: italic;
+        color: #86878b;
+    }
+}
+
+.rewiews-user{
+ display: flex;
+
+ &__photo{
+     width: 70px;
+     height: 70px;
+     border-radius: 50%;
+ }
+
+ &__content{
+     margin-left: 15px;
+ }
+
+ &__name{
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+ }
+
+ &__post{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    color: #86878b;
+ }
+}

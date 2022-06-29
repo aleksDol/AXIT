@@ -1,0 +1,66 @@
+//main:../style.less
+.brand-bar{
+    padding-top: 22px;
+    padding-bottom: 22px;
+    @media @mobile-sm{
+        display: none;
+    }
+}
+.brand-bar__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.brand-bar__content{
+    @media @tablet{
+        display: none;
+    }
+}
+
+.brand-bar__content-tittle{
+font-family: 'Open Sans';
+font-size: 20px;
+font-weight: 700;
+color: #333333;
+margin-bottom: 12px;
+}
+
+
+.brand-bar__content-text{
+    margin-right: 89px;
+
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #86878b;
+}
+
+.brand-bar__social{
+    display: flex;
+    align-items: center;
+    @media @tablet{
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+.brand-bar__social-link{
+    @media @mobile-sm{
+        display: none;
+    }
+}
+.brand-bar__social-link:not(:last-child){
+    margin-right: 30px;
+
+ 
+}
+.social-icons{
+    width: 50px;
+    height: 45px;
+
+    opacity: 0.6;
+    transition: transform 0.2s linear;
+
+    &:hover{
+        transform: translate(-3px, -3px);
+    }
+}
