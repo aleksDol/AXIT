@@ -38,7 +38,8 @@
     column-gap: 70px;
     grid-template-areas: 'A B'
                          'C B'
-                         'D B';
+                         'D B'
+                         'E E';
     @media @mobile-sm{
         grid-template-columns:1fr;
         grid-template-areas: 'A'
@@ -104,6 +105,7 @@
 }
 
 .contact__button{
+    grid-area: E;
     background-color: @orange;
     border-radius: 3px;
     color: white;
@@ -113,6 +115,7 @@
 
     transition: box-shadow 0.2s linear;
     transition: color 0.2s linear;
+   
 
     &:hover{
         box-shadow: 5px 5px 10px @orange;
