@@ -1,8 +1,14 @@
-function funk(){
- let a = document.querySelectorAll('a[href^="#"]')
- for(let b of a){
-     console.log(b);
- }
-}
 
-funk()
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
+	
